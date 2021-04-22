@@ -15,6 +15,7 @@ public class KafkaController {
     private MyTopicConsumer myTopicConsumer;
     public KafkaController(KafkaTemplate<String, String> template) {
         this.template = template;
+        this.myTopicConsumer = myTopicConsumer;
     }
 
     @GetMapping("/kafka/produce")
