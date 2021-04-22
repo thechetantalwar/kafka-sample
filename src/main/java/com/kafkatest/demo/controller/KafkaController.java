@@ -13,7 +13,7 @@ public class KafkaController {
 
     private KafkaTemplate<String, String> template;
     private MyTopicConsumer myTopicConsumer;
-    public KafkaController(KafkaTemplate<String, String> template) {
+    public KafkaController(KafkaTemplate<String, String> template,  MyTopicConsumer myTopicConsumer) {
         this.template = template;
         this.myTopicConsumer = myTopicConsumer;
     }
